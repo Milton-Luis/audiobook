@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de audiobook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <main>
+        <section class="music-container">
+            <div class="track-info">
+                <img src="images/dom-casmurro.jpeg" alt="Audiobook" />
+                <h2 id="capitulo">Cápitulo 1</h2>
+                <p id="autorCapitulo">Por: Machado de Assis</p>
+            </div>
+        </section>
+
+        <section class="music-controller">
+            <audio id="audio-capitulo" src="books/dom-casmurro/1.mp3"></audio>
+            
+            <div id="button-container">
+                <button id="voltar" class="bi bi-skip-start-fill"></button>
+                <button id="play-pause" class="bi bi-play-circle"></button>
+                <button id="avancar" class="bi bi-skip-end-fill"></button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
